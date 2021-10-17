@@ -1,0 +1,37 @@
+{
+  "name": "vswr",
+  "version": "0.0.1",
+  "description": "A data fetch library for vue3",
+  "main": "dist/vswr.umd.js",
+  "module": "dist/vswr.es.js",
+  "types": "types/src/index.d.ts",
+  "engines": {
+    "node": ">=14",
+    "pnpm": ">=6"
+  },
+  "files": [
+    "dist",
+    "types"
+  ],
+  "scripts": {
+    "build:types": "tsc --emitDeclarationOnly",
+    "build": "vite build",
+    "build:watch": "vite build --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Jackie1210/vswr.git"
+  },
+  "keywords": [
+    "vswr",
+    "data-fetching",
+    "vue3",
+    "vue"
+  ],
+  "author": "Lynn Chen <https://github.com/Jackie1210>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jackie1210/vswr/issues"
+  },
+  "homepage": "https://github.com/Jackie1210/vswr#readme"
+}
