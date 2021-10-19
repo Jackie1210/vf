@@ -19,7 +19,7 @@
     "commit-msg": "node scripts/verifyCommit.js"
   },
   "dependencies": {
-    "vite": "^2.6.7"
+    "vite": "^2.6.10"
   },
   "devDependencies": {
     "@types/node": "^16.11.1",
