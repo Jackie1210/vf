@@ -39,12 +39,12 @@ importers:
     specifiers:
       '@vitejs/plugin-vue': ^1.9.3
       typescript: ^4.4.3
+      vf: workspace:*
       vite: ^2.6.4
-      vswr: workspace:*
       vue: ^3.2.16
       vue-tsc: ^0.3.0
     dependencies:
-      vswr: link:../vswr
+      vf: link:../vf
       vue: registry.npmmirror.com/vue/3.2.20
     devDependencies:
       '@vitejs/plugin-vue': registry.npmmirror.com/@vitejs/plugin-vue/1.9.3_vite@2.6.7
@@ -52,7 +52,7 @@ importers:
       vite: registry.npmmirror.com/vite/2.6.7
       vue-tsc: registry.npmmirror.com/vue-tsc/0.3.0_typescript@4.4.4
 
-  packages/vswr:
+  packages/vf:
     specifiers: {}
 
 packages:

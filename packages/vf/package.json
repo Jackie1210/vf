@@ -1,9 +1,9 @@
 {
-  "name": "vswr",
+  "name": "vf",
   "version": "0.0.1",
   "description": "A data fetch library for vue3",
-  "main": "dist/vswr.umd.js",
-  "module": "dist/vswr.es.js",
+  "main": "dist/vf.umd.js",
+  "module": "dist/vf.es.js",
   "types": "types/src/index.d.ts",
   "engines": {
     "node": ">=14",
@@ -20,10 +20,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Jackie1210/vswr.git"
+    "url": "git+ssh://git@github.com/Jackie1210/vf.git"
   },
   "keywords": [
-    "vswr",
+    "vf",
     "data-fetching",
     "vue3",
     "vue"
@@ -31,7 +31,7 @@
   "author": "Lynn Chen <https://github.com/Jackie1210>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Jackie1210/vswr/issues"
+    "url": "https://github.com/Jackie1210/vf/issues"
   },
-  "homepage": "https://github.com/Jackie1210/vswr#readme"
+  "homepage": "https://github.com/Jackie1210/vf#readme"
 }

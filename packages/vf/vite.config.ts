@@ -7,8 +7,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve('index.ts'),
-      name: 'vswr',
-      fileName: (format) => `vswr.${format}.js`
+      name: 'vf',
+      fileName: (format) => `vf.${format}.js`
     },
     rollupOptions: {
       external: ['vue'],
