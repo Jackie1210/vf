@@ -15,8 +15,12 @@
   ],
   "scripts": {
     "build:types": "tsc --emitDeclarationOnly",
-    "build": "vite build",
+    "build:source": "vite build",
+    "build": " run-s build:types build:source",
     "build:watch": "vite build --watch"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.0"
   },
   "repository": {
     "type": "git",

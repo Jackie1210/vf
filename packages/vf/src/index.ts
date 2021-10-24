@@ -1,5 +1,4 @@
-export const main = () => {
-  console.log(
-    'Hello vf!Hello vf!Hello vf!Hello vf!Hello vf!Hello vf!'
-  )
+import { useVF } from './useVF'
+export {
+  useVF
 }

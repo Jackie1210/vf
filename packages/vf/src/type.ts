@@ -1,0 +1,1 @@
+export type AsyncFn<T, P> = (params?: T) => Promise<P | void>

@@ -10,7 +10,7 @@
     "format": "prettier --write .",
     "lint": "eslint packages/*/{src,types}/**/*",
     "clean": "rimraf dist types packages/*/dist",
-    "build": "cd packages/vf && vite build"
+    "build": "cd packages/vf && pnpm build"
   },
   "engines": {
     "node": ">=14.0.0"
@@ -18,13 +18,12 @@
   "gitHooks": {
     "commit-msg": "node scripts/verifyCommit.js"
   },
-  "dependencies": {
-    "vite": "^2.6.10"
-  },
   "devDependencies": {
     "@types/node": "^16.11.1",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
+    "vue": "^3.2.20",
+    "vite": "^2.6.10",
     "chalk": "^4.1.2",
     "eslint": "^8.0.1",
     "eslint-define-config": "^1.1.1",
