@@ -16,9 +16,9 @@ jobs:
         node_version: [12, 14, 16]
         include:
           - os: macos-latest
-            node_version: 14
+            node_version: 16
           - os: windows-latest
-            node_version: 14
+            node_version: 16
       fail-fast: false
     name: "Build: node-${{ matrix.node_version }}, ${{ matrix.os }}"
     steps:
@@ -58,7 +58,7 @@ jobs:
       - name: Set node version to 14
         uses: actions/setup-node@v2
         with:
-          node-version: 14
+          node-version: 16
           cache: "pnpm"
 
       - name: Install deps
