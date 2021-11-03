@@ -2,7 +2,8 @@
   "name": "vf-monorepo",
   "private": "true",
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "playground"
   ],
   "author": "Lynn Chen<https://github.com/Jackie1210>",
   "scripts": {
@@ -10,7 +11,8 @@
     "format": "prettier --write .",
     "lint": "eslint packages/*/src/**/*",
     "clean": "rimraf dist types packages/*/dist",
-    "build": "cd packages/vf && pnpm build"
+    "build": "cd packages/vf && pnpm run build",
+    "play": "cd playground && pnpm dev"
   },
   "engines": {
     "node": ">=14.0.0"
@@ -18,20 +20,24 @@
   "gitHooks": {
     "commit-msg": "node scripts/verifyCommit.js"
   },
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  },
   "devDependencies": {
-    "@types/node": "^16.11.1",
-  "@typescript-eslint/eslint-plugin": "^5.0.0",
-    "@typescript-eslint/parser": "^5.0.0",
-    "vue": "^3.2.20",
-    "vite": "^2.6.10",
+    "@types/node": "^16.11.6",
+    "@typescript-eslint/eslint-plugin": "^5.3.0",
+    "@typescript-eslint/parser": "^5.3.0",
+    "@vue/compiler-sfc": "^3.2.21",
     "chalk": "^4.1.2",
-    "eslint": "^8.0.1",
-    "eslint-define-config": "^1.1.1",
-    "eslint-plugin-vue": "^7.19.1",
+    "eslint": "^8.1.0",
+    "eslint-define-config": "^1.1.2",
+    "eslint-plugin-vue": "^7.20.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.4.1",
     "rimraf": "^3.0.2",
-    "typescript": "^4.4.3",
+    "typescript": "^4.4.4",
+    "vite": "^2.6.13",
+    "vue": "^3.2.21",
     "vue-eslint-parser": "^7.11.0",
     "yorkie": "^2.0.0"
   },
