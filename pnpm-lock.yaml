@@ -4,6 +4,7 @@ importers:
 
   .:
     specifiers:
+      '@microsoft/api-extractor': ^7.18.17
       '@types/node': ^16.11.6
       '@typescript-eslint/eslint-plugin': ^5.3.0
       '@typescript-eslint/parser': ^5.3.0
@@ -21,6 +22,7 @@ importers:
       vue-eslint-parser: ^7.11.0
       yorkie: ^2.0.0
     devDependencies:
+      '@microsoft/api-extractor': 7.18.17
       '@types/node': 16.11.6
       '@typescript-eslint/eslint-plugin': 5.3.0_f8873316f48f7781ccc3e081fc76e214
       '@typescript-eslint/parser': 5.3.0_eslint@8.1.0+typescript@4.4.4
@@ -125,6 +127,45 @@ packages:
     resolution: {integrity: sha1-tSBSnsIdjllFoYUd/Rwy6U45/0U=, tarball: '@humanwhocodes/object-schema/download/@humanwhocodes/object-schema-1.2.1.tgz'}
     dev: true
 
+  /@microsoft/api-extractor-model/7.13.14:
+    resolution: {integrity: sha1-Bxv4gZQoFMd4aiDGgFvFzeQBm8U=, tarball: '@microsoft/api-extractor-model/download/@microsoft/api-extractor-model-7.13.14.tgz'}
+    dependencies:
+      '@microsoft/tsdoc': 0.13.2
+      '@microsoft/tsdoc-config': 0.15.2
+      '@rushstack/node-core-library': 3.43.0
+    dev: true
+
+  /@microsoft/api-extractor/7.18.17:
+    resolution: {integrity: sha1-MTn4A/yu+RnH/2jgK9Z1m8Y3pks=, tarball: '@microsoft/api-extractor/download/@microsoft/api-extractor-7.18.17.tgz'}
+    hasBin: true
+    dependencies:
+      '@microsoft/api-extractor-model': 7.13.14
+      '@microsoft/tsdoc': 0.13.2
+      '@microsoft/tsdoc-config': 0.15.2
+      '@rushstack/node-core-library': 3.43.0
+      '@rushstack/rig-package': 0.3.4
+      '@rushstack/ts-command-line': 4.10.3
+      colors: 1.2.5
+      lodash: 4.17.21
+      resolve: 1.17.0
+      semver: 7.3.5
+      source-map: 0.6.1
+      typescript: 4.4.4
+    dev: true
+
+  /@microsoft/tsdoc-config/0.15.2:
+    resolution: {integrity: sha1-6zU8k/O2KrdL3Jq29Kgrz4AUDxQ=, tarball: '@microsoft/tsdoc-config/download/@microsoft/tsdoc-config-0.15.2.tgz'}
+    dependencies:
+      '@microsoft/tsdoc': 0.13.2
+      ajv: 6.12.6
+      jju: 1.4.0
+      resolve: 1.19.0
+    dev: true
+
+  /@microsoft/tsdoc/0.13.2:
+    resolution: {integrity: sha1-Ow77bTkDvUntsHNpb2DpDfCO+yY=, tarball: '@microsoft/tsdoc/download/@microsoft/tsdoc-0.13.2.tgz'}
+    dev: true
+
   /@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha1-dhnC6yGyVIP20WdUi0z9WnSIw9U=, tarball: '@nodelib/fs.scandir/download/@nodelib/fs.scandir-2.1.5.tgz'}
     engines: {node: '>= 8'}
@@ -146,8 +187,46 @@ packages:
       fastq: 1.13.0
     dev: true
 
+  /@rushstack/node-core-library/3.43.0:
+    resolution: {integrity: sha1-qs5Dv0m8kHRF+jBvjC5gEKg1PNo=, tarball: '@rushstack/node-core-library/download/@rushstack/node-core-library-3.43.0.tgz'}
+    dependencies:
+      '@types/node': 12.20.24
+      colors: 1.2.5
+      fs-extra: 7.0.1
+      import-lazy: 4.0.0
+      jju: 1.4.0
+      resolve: 1.17.0
+      semver: 7.3.5
+      timsort: 0.3.0
+      z-schema: 3.18.4
+    dev: true
+
+  /@rushstack/rig-package/0.3.4:
+    resolution: {integrity: sha1-E5h86o7vLzUOLnU44Cj6g5+MTzw=, tarball: '@rushstack/rig-package/download/@rushstack/rig-package-0.3.4.tgz'}
+    dependencies:
+      resolve: 1.17.0
+      strip-json-comments: 3.1.1
+    dev: true
+
+  /@rushstack/ts-command-line/4.10.3:
+    resolution: {integrity: sha1-K4YQRz8qqeIkUCc/Ziq7AqOXmhE=, tarball: '@rushstack/ts-command-line/download/@rushstack/ts-command-line-4.10.3.tgz'}
+    dependencies:
+      '@types/argparse': 1.0.38
+      argparse: 1.0.10
+      colors: 1.2.5
+      string-argv: 0.3.1
+    dev: true
+
+  /@types/argparse/1.0.38:
+    resolution: {integrity: sha1-qB/YYG1IH4c6OADG665PHXaKVqk=, tarball: '@types/argparse/download/@types/argparse-1.0.38.tgz'}
+    dev: true
+
   /@types/json-schema/7.0.9:
     resolution: {integrity: sha1-l+3JA36gw4WFMgsolk3eOznkZg0=, tarball: '@types/json-schema/download/@types/json-schema-7.0.9.tgz'}
+    dev: true
+
+  /@types/node/12.20.24:
+    resolution: {integrity: sha1-w3rGnLKUivtM75X0JPoAN5camlw=, tarball: '@types/node/download/@types/node-12.20.24.tgz'}
     dev: true
 
   /@types/node/16.11.6:
@@ -568,6 +647,17 @@ packages:
   /color-name/1.1.4:
     resolution: {integrity: sha1-wqCah6y95pVD3m9j+jmVyCbFNqI=, tarball: color-name/download/color-name-1.1.4.tgz}
     dev: true
+
+  /colors/1.2.5:
+    resolution: {integrity: sha1-icetmjdLwDDfgBMkH2gTbtiDWvw=, tarball: colors/download/colors-1.2.5.tgz}
+    engines: {node: '>=0.1.90'}
+    dev: true
+
+  /commander/2.20.3:
+    resolution: {integrity: sha1-/UhehMA+tIgcIHIrpIA16FMa6zM=, tarball: commander/download/commander-2.20.3.tgz}
+    requiresBuild: true
+    dev: true
+    optional: true
 
   /concat-map/0.0.1:
     resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=, tarball: concat-map/download/concat-map-0.0.1.tgz}
@@ -1170,6 +1260,15 @@ packages:
     resolution: {integrity: sha1-ZL/tXLaP48p4s+shStl7Y77c5WE=, tarball: flatted/download/flatted-3.2.2.tgz}
     dev: true
 
+  /fs-extra/7.0.1:
+    resolution: {integrity: sha1-TxicRKoSO4lfcigE9V6iPq3DSOk=, tarball: fs-extra/download/fs-extra-7.0.1.tgz?cache=0&sync_timestamp=1633098482803&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Ffs-extra%2Fdownload%2Ffs-extra-7.0.1.tgz}
+    engines: {node: '>=6 <7 || >=8'}
+    dependencies:
+      graceful-fs: 4.2.8
+      jsonfile: 4.0.0
+      universalify: 0.1.2
+    dev: true
+
   /fs.realpath/1.0.0:
     resolution: {integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=, tarball: fs.realpath/download/fs.realpath-1.0.0.tgz}
     dev: true
@@ -1339,6 +1438,11 @@ packages:
       resolve-from: 4.0.0
     dev: true
 
+  /import-lazy/4.0.0:
+    resolution: {integrity: sha1-6OtidIOgpD2jwD8+NVSL5csMwVM=, tarball: import-lazy/download/import-lazy-4.0.0.tgz}
+    engines: {node: '>=8'}
+    dev: true
+
   /imurmurhash/0.1.4:
     resolution: {integrity: sha1-khi5srkoojixPcT7a21XbyMUU+o=, tarball: imurmurhash/download/imurmurhash-0.1.4.tgz}
     engines: {node: '>=0.8.19'}
@@ -1492,6 +1596,10 @@ packages:
     resolution: {integrity: sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=, tarball: isexe/download/isexe-2.0.0.tgz?cache=0&sync_timestamp=1633611739153&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fisexe%2Fdownload%2Fisexe-2.0.0.tgz}
     dev: true
 
+  /jju/1.4.0:
+    resolution: {integrity: sha1-o6vicYryQaKykE+EpiWXDzia4yo=, tarball: jju/download/jju-1.4.0.tgz}
+    dev: true
+
   /js-stringify/1.0.2:
     resolution: {integrity: sha1-Fzb939lyTyijaCrcYjCufk6Weds=, tarball: js-stringify/download/js-stringify-1.0.2.tgz}
     dev: true
@@ -1529,6 +1637,12 @@ packages:
 
   /jsonc-parser/3.0.0:
     resolution: {integrity: sha1-q914VwHH5+rKip7IzwcMpRp0WiI=, tarball: jsonc-parser/download/jsonc-parser-3.0.0.tgz}
+    dev: true
+
+  /jsonfile/4.0.0:
+    resolution: {integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=, tarball: jsonfile/download/jsonfile-4.0.0.tgz}
+    optionalDependencies:
+      graceful-fs: 4.2.8
     dev: true
 
   /jstransformer/1.0.0:
@@ -1572,6 +1686,14 @@ packages:
       parse-json: 4.0.0
       pify: 3.0.0
       strip-bom: 3.0.0
+    dev: true
+
+  /lodash.get/4.4.2:
+    resolution: {integrity: sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=, tarball: lodash.get/download/lodash.get-4.4.2.tgz}
+    dev: true
+
+  /lodash.isequal/4.5.0:
+    resolution: {integrity: sha1-QVxEePK8wwEgwizhDtMib30+GOA=, tarball: lodash.isequal/download/lodash.isequal-4.5.0.tgz}
     dev: true
 
   /lodash.merge/4.6.2:
@@ -2003,6 +2125,19 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
+  /resolve/1.17.0:
+    resolution: {integrity: sha1-sllBtUloIxzC0bt2p5y38sC/hEQ=, tarball: resolve/download/resolve-1.17.0.tgz}
+    dependencies:
+      path-parse: 1.0.7
+    dev: true
+
+  /resolve/1.19.0:
+    resolution: {integrity: sha1-GvW/YwQJc0oGfK4pMYqsf6KaJnw=, tarball: resolve/download/resolve-1.19.0.tgz}
+    dependencies:
+      is-core-module: 2.8.0
+      path-parse: 1.0.7
+    dev: true
+
   /resolve/1.20.0:
     resolution: {integrity: sha1-YpoBP7P3B1XW8LeTXMHCxTeLGXU=, tarball: resolve/download/resolve-1.20.0.tgz}
     dependencies:
@@ -2149,6 +2284,11 @@ packages:
     resolution: {integrity: sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=, tarball: sprintf-js/download/sprintf-js-1.0.3.tgz}
     dev: true
 
+  /string-argv/0.3.1:
+    resolution: {integrity: sha1-leL77AQnrhkYSTX4FtdKqkxcGdo=, tarball: string-argv/download/string-argv-0.3.1.tgz}
+    engines: {node: '>=0.6.19'}
+    dev: true
+
   /string.prototype.padend/3.1.3:
     resolution: {integrity: sha1-mXpt4SySx8s03IogGmxT2b2IpfE=, tarball: string.prototype.padend/download/string.prototype.padend-3.1.3.tgz}
     engines: {node: '>= 0.4'}
@@ -2217,6 +2357,10 @@ packages:
     resolution: {integrity: sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=, tarball: text-table/download/text-table-0.2.0.tgz}
     dev: true
 
+  /timsort/0.3.0:
+    resolution: {integrity: sha1-QFQRqOfmM5/mTbmiNN4R3DHgK9Q=, tarball: timsort/download/timsort-0.3.0.tgz}
+    dev: true
+
   /to-fast-properties/2.0.0:
     resolution: {integrity: sha1-3F5pjL0HkmW8c+A3doGk5Og/YW4=, tarball: to-fast-properties/download/to-fast-properties-2.0.0.tgz}
     engines: {node: '>=4'}
@@ -2278,6 +2422,11 @@ packages:
       which-boxed-primitive: 1.0.2
     dev: true
 
+  /universalify/0.1.2:
+    resolution: {integrity: sha1-tkb2m+OULavOzJ1mOcgNwQXvqmY=, tarball: universalify/download/universalify-0.1.2.tgz}
+    engines: {node: '>= 4.0.0'}
+    dev: true
+
   /upath/2.0.1:
     resolution: {integrity: sha1-UMc96mjW9rmQ9R0nnOYIFmXWGos=, tarball: upath/download/upath-2.0.1.tgz}
     engines: {node: '>=4'}
@@ -2298,6 +2447,11 @@ packages:
     dependencies:
       spdx-correct: 3.1.1
       spdx-expression-parse: 3.0.1
+    dev: true
+
+  /validator/8.2.0:
+    resolution: {integrity: sha1-PBI3KQ43CSNVNE/veMIxJJ2rd7k=, tarball: validator/download/validator-8.2.0.tgz}
+    engines: {node: '>= 0.10'}
     dev: true
 
   /vite/2.6.13:
@@ -2545,4 +2699,15 @@ packages:
       is-ci: 1.2.1
       normalize-path: 1.0.0
       strip-indent: 2.0.0
+    dev: true
+
+  /z-schema/3.18.4:
+    resolution: {integrity: sha1-6oEysnlTPuYL4khaAvfj5CVBqaI=, tarball: z-schema/download/z-schema-3.18.4.tgz}
+    hasBin: true
+    dependencies:
+      lodash.get: 4.4.2
+      lodash.isequal: 4.5.0
+      validator: 8.2.0
+    optionalDependencies:
+      commander: 2.20.3
     dev: true

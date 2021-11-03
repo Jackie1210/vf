@@ -1,4 +1,7 @@
-import { useVF } from './useVF'
+export * from './useVF'
+
+export * from './type'
+
 export {
-  useVF
-}
+  defaultConfig
+} from './utils'

@@ -1,10 +1,8 @@
 import { ref } from 'vue'
 import { defaultConfig } from './utils/config'
-import type {
-  AsyncFn
-} from './type'
+import type { AsyncFn } from './type'
 
-const useVF = <T, P>(
+export const useVF = <T, P>(
   fn: AsyncFn<T, P>,
   config: typeof defaultConfig
 ) => {
@@ -32,8 +30,4 @@ const useVF = <T, P>(
     isFinished,
     excute
   }
-}
-
-export {
-  useVF
 }

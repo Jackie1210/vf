@@ -4,7 +4,7 @@
   "description": "A data fetch library for vue3",
   "main": "dist/vf.umd.js",
   "module": "dist/vf.es.js",
-  "types": "types/src/index.d.ts",
+  "types": "dist/index.d.ts",
   "engines": {
     "node": ">=14",
     "pnpm": ">=6"
@@ -14,9 +14,11 @@
     "types"
   ],
   "scripts": {
-    "build:types": "tsc --emitDeclarationOnly",
-    "build:source": "vite build",
-    "build": " run-s build:types build:source",
+    "build": "run-s bundle build-type",
+    "bundle": "vite build",
+    "build-type": "run-s build-temp-types roll-types",
+    "build-temp-types": "tsc -p . --emitDeclarationOnly --noEmit false --outDir temp",
+    "roll-types": "api-extractor run && rimraf temp",
     "build:watch": "vite build --watch"
   },
   "peerDependencies": {
