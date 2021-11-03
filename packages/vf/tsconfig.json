@@ -9,7 +9,6 @@
     "strictNullChecks": true,
     "strictFunctionTypes": true,
     "declaration": true,
-    "declarationDir": "./types",
     "resolveJsonModule": true,
     "rootDir": ".",
     "baseUrl": ".",
@@ -18,6 +17,6 @@
     "noUnusedLocals": true,
     "types": ["vite/client"]
   },
-  "include": ["src"],
+  "include": ["src/**/*.ts"],
   "exclude": ["**/node_modules", "**/dist"]
 }
